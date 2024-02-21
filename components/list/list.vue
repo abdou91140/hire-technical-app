@@ -1,38 +1,20 @@
 <template>
     <div>
         <h3>Liste de pages</h3>
-        <div class="grid sm:grid-cols-2 gap-16">
+        <div class="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20">
             <Item v-for="item in items" :key="item.slug" :item="item" />
         </div>
     </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import Item from '@/components/list/item'
 
 export default {
-    components: { Item },
-    data () {
-        return {
-            items: [
-                {
-                    name: "Maliki",
-                    slug: "maliki"
-                },
-                {
-                    name: "Thinkerview",
-                    slug: "thinkerview"
-                },
-                {
-                    name: "Yatuu",
-                    slug: "yatuu"
-                },
-                {
-                    name: "François Theurel",
-                    slug: "francois-theurel"
-                },
-            ]
-        }
-    }
+  components: { Item },
+  computed: {
+    ...mapState('item', ['items'])
+  }
 }
 </script>
