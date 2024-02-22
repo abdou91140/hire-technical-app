@@ -1,17 +1,18 @@
 <template>
     <form @submit.prevent="handleSubmit">
-        <div class="my-36 text-center">
+        <div class="my-36 text-center grid  grid-cols-1 gap-16">
             <h3>Ajouter une page</h3>
             <div>
                 <label>Nom :</label>
-                <input class="mb-16" id="name" v-model="fields.name" type="text" required />
+                <input c id="name" v-model="fields.name" type="text" required />
             </div>
             <div>
                 <label>Slug :</label>
-                <input class="mb-16" id="slug" v-model="fields.slug" type="text" required />
+                <input id="slug" v-model="fields.slug" type="text" required />
             </div>
-
-            <button class="btn" type="submit">Ajouter</button>
+            <div>
+                <button class="btn" type="submit">Ajouter</button>
+            </div>
         </div>
     </form>
 </template>
@@ -66,5 +67,16 @@ input:not([type="radio"]):not([type="checkbox"]):focus {
     font-size: 1.2rem;
     border-radius: 4px;
     padding: 6px;
+
+}
+
+form {
+    background-color: #fff;
+    box-shadow: 0 0 51px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
 }
 </style>

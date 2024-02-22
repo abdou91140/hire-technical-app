@@ -145,7 +145,7 @@ article {
 
 .t-home-slideshow-tip-btn {
     background-color: #d64758;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 10px 10px;
     color: #fff;
     display: block;
     font-size: 1.1rem;
