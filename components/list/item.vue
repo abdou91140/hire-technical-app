@@ -61,8 +61,6 @@ article {
     flex-direction: column;
     padding: 0;
     text-align: center;
-    /*     margin-top: 50px;
- */
     max-width: 250px;
 
 }
@@ -72,15 +70,6 @@ article {
     background-size: cover;
     border-radius: 10px 10px 0 0;
     position: relative;
-    /*    border: 3px solid #fff;
- 
-    border-radius: 50%;
-    height: 122px;
-    margin-bottom: 15px;
-    margin-top: -45px; 
-    position: relative;
-    transition: border-color .1s ease-out;
-    width: 122px;*/
 }
 
 .t-home-slideshow-avatar-container img {
@@ -131,16 +120,6 @@ article {
     height: 20px;
     display: none;
 
-    img {
-        opacity: inherit;
-        /*         border-radius: 50%;
-        border: solid #d8d8d8 1px;
-        width: auto;
-        height: 100%;
-        display: inline;
-        margin: auto; */
-
-    }
 }
 
 .t-home-slideshow-tip-btn {

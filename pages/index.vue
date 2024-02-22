@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2 class="text-center">Test technique Tipeee</h2>
-        <section class="grid lg:grid-cols-1 justify-center justify-items-center">
+        <section class="pt-36 grid grid-cols-1 justify-center justify-items-center">
             <AddItem />
             <List />
         </section>
@@ -21,6 +21,6 @@ export default {
 h2 {
     background-image: linear-gradient(90deg, #86b3e4, #6f8fe7);
     color: white;
-    padding-top: 80px;
+    padding: 80px;
 }
 </style>

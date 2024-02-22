@@ -29,11 +29,8 @@ export default {
         }
     },
     methods: {
-        handleSubmit() {
-
-            // Dispatch the addPage action from the 'item' module with the form data
-            this.$store.dispatch('item/addItem', { ...this.fields })
-            // Optionally, you can reset the form fields
+      async  handleSubmit() {
+            await this.$store.dispatch('item/createItem', { ...this.fields })
             this.fields.name = null
             this.fields.slug = null
         }
@@ -51,6 +48,7 @@ input:not([type="radio"]):not([type="checkbox"]) {
     font-size: 1rem;
     font-weight: 400;
     padding: 0.5rem;
+    margin: auto;
     transition: all .1s ease;
 }
 
@@ -74,7 +72,7 @@ form {
     background-color: #fff;
     box-shadow: 0 0 51px rgba(0, 0, 0, .1);
     border-radius: 10px;
-    padding: 0;
+    margin-bottom: 30px;
     text-align: center;
     width: 100%;
     max-width: 300px;
